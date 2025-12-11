@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Twitter View Tracker</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      #header {
+        background-color: #1DA1F2; /* Twitter's brand color */
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 3px;
+      }
+      #tweetList {
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 10px;
+        height: 300px; /* Fixed height with a vertical scrollbar */
+        overflow-y: auto;
+      }
+      .tweetItem {
+        background-color: white;
+        border: 1px solid #ddd;
+        margin-bottom: 5px;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      .tweetContent {
+        color: #555;
+      }
+      .tweetDate {
+        text-align: right;
+        color: #aaa;
+        font-size: 0.8em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Tweets Viewed</h1>
+    </div>
+    <div id="tweetList">
+      <!-- Tweets will be dynamically inserted here -->
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
